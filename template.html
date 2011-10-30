@@ -115,6 +115,7 @@
     overflow: hidden;
     margin-right: 20px;
     top: -1px;
+    z-index: 1;
   }
   
   .sumo-developers-screenshot {
@@ -219,7 +220,7 @@
       if (footer === null) {
           footer = document.createElement("footer");
           slides[i].appendChild(footer);
-          footer.innerHTML = "Generic footer for all slides, override with a &lt;footer&gt; tag.";
+          footer.setAttribute("innerHTML", "Generic footer for all slides, override with a &lt;footer&gt; tag.");
       }
   }
   
@@ -233,9 +234,9 @@
       body.insertBefore(mozillaTab, firstElem);
   }
 
-  mozillaTab.href = "https://www.mozilla.org";
+  mozillaTab.setAttribute("href", "https://www.mozilla.org");
   mozillaTab.setAttribute("class", "mozilla");
-  mozillaTab.innerHTML = "visit <span>mozilla</span>";
+  mozillaTab.setAttribute("innerHTML", "visit <span>mozilla</span>");
 </script>
 
 
