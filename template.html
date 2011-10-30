@@ -57,7 +57,7 @@
   html { background-color: black; }
   body { background-color: white; }
 
-  section {
+  body {
     font-family: MuseoSans-500, arial, serif;
     font-size: 40px;
     border-top: 2px solid #676767;
@@ -218,24 +218,24 @@
       var footer = slides[i].querySelector("footer");
       if (footer === null) {
           footer = document.createElement("footer");
-          footer.setAttribute("class", "notransfx");
           slides[i].appendChild(footer);
           footer.innerHTML = "Generic footer for all slides, override with a &lt;footer&gt; tag.";
       }
-      
-      // Add the Mozilla tab to all slides
-      var mozillaTab = slides[i].querySelector(".mozilla");
-      var firstElem = slides[i].querySelector("*");
-      
-      if (mozillaTab === null) {
-          mozillaTab = document.createElement("a");
-          slides[i].insertBefore(mozillaTab, firstElem);
-      }
-      
-      mozillaTab.href = "https://www.mozilla.org";
-      mozillaTab.setAttribute("class", "mozilla notransfx");
-      mozillaTab.innerHTML = "visit <span>mozilla</span>";
   }
+  
+  // Add the Mozilla tab
+  var body = document.querySelector("body");
+  var mozillaTab = body.querySelector(".mozilla");
+  var firstElem = body.querySelector("*");
+
+  if (mozillaTab === null) {
+      mozillaTab = document.createElement("a");
+      body.insertBefore(mozillaTab, firstElem);
+  }
+
+  mozillaTab.href = "https://www.mozilla.org";
+  mozillaTab.setAttribute("class", "mozilla");
+  mozillaTab.innerHTML = "visit <span>mozilla</span>";
 </script>
 
 
