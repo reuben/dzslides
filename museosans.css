@@ -1,0 +1,28 @@
+/* @license
+ * MyFonts Webfont Build ID 1402895, 2011-10-20T15:58:16-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Museo Sans 500 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-sans/500/
+ * Copyright: Copyright (c) 2008 by Jos Buivenga. All rights reserved.
+ * Licensed pageviews: unlimited
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=1402895
+ * 
+ * © 2011 Bitstream Inc
+*/
+
+@font-face {
+    font-family: 'MuseoSans-500';
+    src: url('webfonts/museosans.eot');
+    src: url('webfonts/museosans.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/museosans.woff') format('woff'),
+         url('webfonts/museosans.ttf') format('truetype'),
+         url('webfonts/museosans.svg#wf') format('svg');
+}
